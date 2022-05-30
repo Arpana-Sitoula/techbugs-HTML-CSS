@@ -1,0 +1,240 @@
+*{
+	padding:0;
+	margin: 0;
+	text-decoration: none;	
+}
+body{
+	font-family: montserrat;
+}
+nav{
+	background: #36454f;
+	height:70px;
+	width:100%;
+}
+label.logo1{
+	color:#002147;
+	font-size:35px;
+	line-height:77px;
+	font-weight:bold;
+    text-align: center;
+    padding-left:7px;
+}
+label.logo2{
+	color:white;
+	font-size:35px;
+	line-height:77px;
+	font-weight:bold;
+    text-align: center;
+}
+
+ nav ul {
+    list-style-type:none;
+ 	float: right;
+    overflow: hidden;
+ }
+ 
+
+nav ul li{
+	display:inline-block;
+	line-height:70px;
+	font-size:150%;
+    text-align: center;
+    
+}
+li a{
+    padding: 26px 20px;
+    color:white;
+}
+li a:hover{
+    color:#bcc9e3;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin:0px 0px 0px 0px;
+     
+} 
+  
+ ul.navbar li a.active{
+     color: #002147;
+	 }
+
+/* css copied code */
+.box{
+    margin: 0 auto;
+    width: 80%;
+    background: #f1f4f5;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+}
+@media (max-width: 980px) {
+	.box{
+		flex-flow: wrap;
+		text-align: center;
+		align-content: center;
+		align-items: center;
+	  }
+}
+.box div {
+    height: auto;
+  }
+  .box .blank {
+    color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("bg1.jpg"); 
+    overflow: hidden;
+	
+  }
+  .box .blank .overlay {
+    padding:80px 50px 30px 70px;
+    width: 100%;
+    height: 100%;
+    background:#002147;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .box .blank .overlay h2 {
+    font-size: 7vmax;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .box .blank .overlay span p {
+    margin-top: 30px;
+    font-weight: 800;
+  }
+  .box .blank .overlay span a {
+    background: #3b5998;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 14px 50px;
+    border-radius: 100px;
+    display: inline-block;
+    box-shadow: 0 3px 6px 1px #042d4657;
+  }
+  .box .blank .overlay span a:last-child {
+    background: #1dcaff;
+    margin-left: 30px;
+  }
+  .box .login {
+    padding: 50px;
+    overflow: hidden;
+  }
+  @media (max-width: 980px) {
+    .box .login {
+      width: 100%;
+    }
+  }
+  .box .login h5 {
+    font-size: 6vmax;
+    line-height: 0;
+	  margin:10px;
+  }
+  .box .login p {
+    font-size: 14px;
+	margin-top:70px;
+    color: #B0B3B9;
+  }
+  .login a{
+	  color:#36454f;
+  }
+  .box .login .inputs {
+    overflow: hidden;
+  }
+  .box .login input {
+	  background-color:transparent;
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #B0B3B9;
+  }
+  .box .login .remember-me--forget-password {
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+	  clear: both;
+  }
+  .box .login .remember-me--forget-password input {
+    margin-right: 7px;
+    width: auto;
+  }
+  .box .login button {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px #49c628a6;
+    background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+  }
+
+  .labels {
+    display:inline;
+    position: relative;
+    
+  }
+  .labels span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    transition: all 0.2s linear;
+  }
+  .labels input[type="checkbox"] {
+    display:inline-block;
+  }
+ .total{
+	 margin-top:50px;
+ } 
+  /*
+  .labels::before {
+    content: ' \f00c';
+    position: absolute;
+    font-family: FontAwesome;
+    background: transparent;
+    border: 3px solid #70F570;
+    border-radius: 4px;
+    color: transparent;
+    left: -30px;
+    transition: all 0.2s linear;
+  }
+  .labels:hover::before {
+    font-family: FontAwesome;
+    content: ' \f00c';
+    color: #fff;
+    cursor: pointer;
+    background: #70F570;
+  }
+  
+  .labels:hover::before .text-checkbox {
+    background: #70F570;
+  }
+  
+  .labels span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  } 
+  
+  .labels input[type="checkbox"] {
+    display:inline-block;
+  }*/
+  
+  
+  
+ 
+  

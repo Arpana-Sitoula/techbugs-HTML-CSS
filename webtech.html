@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width ='device-width',initial-scale=1.0">
+	<title>welcome to our page: home</title>
+<link rel="icon" href="art1.png">
+<link rel="stylesheet" type="text/css" href="webtech.css">
+
+
+
+</head>
+<body>
+    <div class="bg-div">
+        <img class="logo" src="art2.png" width="70" height="70" alt="logo" align=left>
+    
+	 <nav>
+	 	<label class="logo1">TECH</label>
+        <label class="logo2">BUGS</label>
+	 	<ul class="navbar">
+	 		<li>
+	 			<a class="active" href="webtech.html" target="_self">Home</a>
+	 		</li>
+	 		<li>
+	 			<a href="about.html" target="_self">About Us</a>
+	 		</li>
+      	 	<li>
+	 			<a href="services.html" target="_self">Services</a>
+	 		</li>
+      	 	<li>
+	 			<a href="contact.html" target="_self">Contact Us</a>
+	 		</li>
+      	 	<li>
+	 			<a href="feedback.html" target="_self">Login</a>
+	 		</li>
+	 	</ul>
+	 </nav>
+    </div>  
+	<p id="demo"></p>
+	<br><br>
+
+	<button class="open_button" onclick="openForm()">Open Form</button>
+	<div class="form-popup" id="Myform">
+	<form name="myform" class="form-container" method="post" onsubmit="validation(); return false"> 
+		<table>
+			<tr>
+				<th><label for="fname">First Name :</label></th>
+				<th><label for="lname">Last Name :</label></th>
+			</tr>
+			<tr>
+				<td><input type="text" id="fname" name="fname" class="inp"> </td>
+				<td><input type="text" id="lname" name="lname" class="inp"> </td>
+			</tr>
+			<tr>
+				<th><label for="add">Address :</label></th>
+				<td><input type="text" id="add" name="add" class="inp"></td>
+			</tr>
+			<tr>
+				<th><label for="contact1">Contact :</label></th>
+				<td><input type="text" id="contact1" name="contact1" class="inp"></td>
+			</tr>
+			<tr>
+				<th><label for="email">Email :</label></th>
+				<td><input type="email" id="email" name="email" class="inp"></td>
+			</tr>
+			
+		</table>
+		        <p style="font-weight:bold;">Choose your gender:</p>
+				<input type="radio" id="m" name="gender" class="inp">
+				<label for="m">Male</label>
+				<input type="radio" id="f" name="gender" class="inp">
+			    <label for="f">Female</label>
+				<br><br>
+				<button type="submit" class="button">Submit</button>
+				<button onclick="document.getElementsByClassName('inp').value = ''">Reset</button>
+				<button type="button" class="button_cancel" onclick="closeForm()">Close</button>
+			
+	
+	</form>
+	</div>
+	<p id="message"></p>
+	<script>
+		function openForm(){
+			document.getElementById("Myform").style.display = "block";
+		}
+		function closeForm(){
+			document.getElementById("Myform").style.display = "none";
+		}
+
+		function validation(){
+			let fname = document.forms["myform"]["fname"].value;
+			let lname = document.forms["myform"]["lname"].value;
+			let address = document.forms["myform"]["add"].value;
+			let contact = document.forms["myform"]["contact1"].value;
+			let email = document.forms["myform"]["email"].value;
+
+		    var nameX = /^[a-zA-Z ]*$/;
+			var addX = /^[a-zA-Z ]*[0-9]{0,3}[ a-zA-Z]*$/;
+			var conX = /^[(]{0,1}[+][0-9]{1,3}[)]{0,1}[ ][0-9]{10}$/;
+			var emailX = /^[a-zA-Z0-9_]+[@][a-zA-Z]*(\.\w{2,3})+$/;
+
+			function name_check(){
+				if(fname == "" || lname == ""){
+					document.getElementById("message").innerHTML = "Name cannot not be empty";
+					}
+				else if(fname == lname){
+                    document.getElementById("message").innerHTML = "First name and Last name should be different";
+					}
+				else if(fname.length > 20 || fname.length < 2){
+					document.getElementById("message").innerHTML = "First name should contain atleast 2 and atmost 20 characters";
+					}
+				else if(nameX.test(fname) == false){
+					document.getElementById("message").innerHTML = "Name should contain only alphabets";
+				}
+				else{
+					document.getElementById("message").innerHTML = "Name is succesfully submitted";
+					}
+				
+				
+				}
+			function address_check(){
+				if(address == ""){
+					document.getElementById("message").innerHTML = "Address cannot be empty";
+					}
+				else if(addX.test(address) == false){
+					document.getElementById("message").innerHTML = "Invalid address";
+				}
+				else{
+					document.getElementsById("message").innerHTML = "Address is successfully submitted";
+					}
+				
+				}
+			function contact_check(){
+				if(contact == ""){
+					document.getElementById("message").innerHTML = "User must provide their contact";
+				}
+			    else if(conX.test(contact) == false){
+					document.getElementById("message").innerHTML = "Invalid contact format";
+				}
+				else{
+					document.getElementById("message").innerHTML = "Contact updated successfully";
+				}
+			}
+			function email_check(){
+				if(email == ""){
+					document.getElementById("message").innerHTML = "User must provide their email";
+				}
+				else if(emailX.test(email) == false){
+					document.getElementById("message").innerHTML = "Invalid email";
+				}
+				else{
+					document.getElementById("message").innerHTML = "Email successfully updated";
+				}
+			}
+				//name_check();
+				//address_check();
+				//contact_check();
+				//email_check();
+		
+		}	
+		
+	</script>
+
+</body>
+</html> 

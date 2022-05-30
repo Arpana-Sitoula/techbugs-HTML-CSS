@@ -1,0 +1,234 @@
+*{
+	padding:0;
+	margin: 0;
+	text-decoration: none;	
+}
+body{
+	font-family: montserrat;
+    background-color:#f2f2f2;
+}
+nav{
+	background:#36454f;
+	height:70px;
+	width:100%;
+  
+    
+}
+div.bg-div{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+label.logo1{
+	color:#002147;
+	font-size:35px;
+	line-height:77px;
+	font-weight:bold;
+    text-align: center;
+    padding-left:7px;
+}
+label.logo2{
+	color:white;
+	font-size:35px;
+	line-height:77px;
+	font-weight:bold;
+    text-align: center;
+}
+
+ nav ul {
+    list-style-type:none;
+ 	float: right;
+    overflow: hidden;
+ }
+ 
+
+nav ul li{
+	display:inline-block;
+	line-height: 70px;
+	font-size:150%;
+    text-align: center;
+   
+    
+}
+ul li a{
+    padding: 26px 15px;
+    color:white;
+}
+ul li a:hover{
+    color:#bcc9e3;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin:0px 0px 0px 0px;
+     
+} 
+  
+ ul.navbar li a.active{
+     color: #002147;
+	 }
+.heading{
+    color:#002147;
+    text-align:center;
+    font-size: 350%;
+    font-weight:bold;
+    padding: 20px 20px 0px 20px;
+    font-family:montserrat;
+}
+.element{
+    font-size:150%;
+    font-weight:normal;
+    color:white;
+    text-align:center;
+    background-color:#36454f;
+    float: right;
+    width:60%;
+    padding:20px;
+    height:40%;
+    margin-right:250px;
+}
+div a:hover{
+    color:whitesmoke;
+}
+
+
+
+form{
+    align-items: center;
+    margin-left:550px;
+    margin-right:100px;
+    margin-top:250px;
+}
+
+input[type=text]{
+    width:35%;
+    padding:12px 20px;
+    margin:border-box;
+    border:2px solid #bcc9e3;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=email]{
+    width: 35%;
+    padding:12px 20px;
+    margin:border-box;
+    border:2px solid #bcc9e3;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+input[type=text]:hover, input[type=email]:hover, textarea:hover{
+border:2px solid #002147;
+}
+
+input[type=submit]{
+  background-color: #36454f;
+  border: none;
+  color: white;
+  font-size: 130%;
+  padding:8px 6px;
+  text-decoration: none;
+ 
+  cursor: pointer;
+  border-radius: 2px;
+}
+input[type=submit]:hover{
+  background-color: #002147;
+  border: none;
+  color:#bcc9e3;
+  font-size: 130%;
+  padding:8px 6px;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 2px;
+  
+}
+.container label{
+    display: inline-block;
+}
+
+textarea {
+    width:40%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #bcc9e3;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+  input[type=text] , input[type=email] ,textarea{
+      resize:vertical;
+  }
+
+  .container {
+    border-radius: 5px;
+    
+    padding: 20px;
+  }
+ 
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+ 
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .container form{
+      box-sizing:border-box;
+      margin-left:90px;
+      margin-right:90px;
+      padding: 10px;
+      background-color: #b7c4cd;
+  }
+  .illu{
+    margin-left:70%;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .footer{
+      width:100%;
+
+  }
+  .big{
+      margin-top:20px;
+      padding:5px;
+      font-size:200%;
+      text-align: center;
+      color:black;
+  }
+  .small{
+      margin:10px;
+      font-size:100%;
+      text-align: center;
+      color:#36454f;
+      margin-bottom: 15px;
+  }
+  
+
+ 
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

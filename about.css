@@ -1,0 +1,147 @@
+*{
+	padding:0;
+	margin: 0;
+	text-decoration: none;	
+}
+body{
+	font-family: montserrat;
+}
+nav{
+	background:#36454f;
+	height:70px;
+	width:100%;
+}
+
+label.logo1{
+	color:#002147;
+	font-size:35px;
+	line-height:77px;
+	font-weight:bold;
+    text-align: center;
+    padding-left:7px;
+}
+label.logo2{
+	color:white;
+	font-size:35px;
+	line-height:77px;
+	font-weight:bold;
+    text-align: center;
+}
+
+ nav ul {
+    list-style-type:none;
+ 	float: right;
+    overflow: hidden;
+ }
+ 
+
+nav ul li{
+	display:inline-block;
+	line-height:70px;
+	font-size:150%;
+    text-align: center;
+   
+    
+}
+ul a{
+    padding: 26px 15px;
+    color:white;
+}
+ul a:hover{
+    color:#bcc9e3;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin:0px 0px 0px 0px;
+     
+} 
+  
+ ul.navbar li a.active{
+     
+     color: #002147;
+	 }
+.up{
+	background-image: url('aboutbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+	margin-top:-0.63rem;
+	
+}
+
+div.head{
+	color:#e7e7e7;
+	margin:10px;
+	text-align: center;
+	font-size: 200%;
+	font-weight: bolder;
+	padding-top:30px;
+	padding-bottom: 10px;
+
+}
+div.para{
+	color:white;
+	text-align: justify;
+	margin-left:200px;
+	margin-right:200px;
+	font-size: 120%;
+	line-height: 2.5;
+	padding:20px;
+}
+p.head{
+	color:#36454f;
+	text-align: center;
+	font-size: 200%;
+	margin-top:30px;
+
+}
+.cards{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin:auto;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	float:left;
+	position: relative;
+	margin-top:80px;
+
+}
+.title{
+	color: #36454f;
+	font-size: 18px;
+	padding:20px;
+}
+button{
+	border:none;
+	outline: 0;
+	display:inline-block;
+	padding:8px;
+	color:white;
+	background-color:#002147;
+	text-align: center;
+	cursor:pointer;
+	width:100%;
+	font-size:18px;
+
+}
+ a{
+	text-decoration: none;
+	font-size: 22px;
+	color:#002147;
+}
+button:hover , nav.site:hover {
+	opacity: 0.7;
+  }
+.down{
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
